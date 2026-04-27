@@ -10,9 +10,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# -----------------------------
-# 🧠 ABOUT SECTION
-# -----------------------------
+
 st.title("🎤 Accent Converter AI")
 
 st.markdown("""
@@ -33,9 +31,6 @@ This AI-powered tool converts spoken language into text and then generates speec
 
 st.markdown("---")
 
-# -----------------------------
-# ✨ EXTRA INFO SECTION
-# -----------------------------
 st.subheader("✨ Features")
 
 st.markdown("""
