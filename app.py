@@ -23,11 +23,10 @@ This AI-powered tool converts spoken language into text and then generates speec
 
 ---
 
-##  Why this tool?
- Helps understand different English accents
- Useful for language learning
- Demonstrates Speech Recognition + AI voice synthesis
- Helps tourists visiting foreign countries
+##  How can this tool be used?
+ Our ai-powered tool can be used for learning new english accents.It also helps tourists visiting foreign
+ countries.It bridges the communication gap between people hailing from different regions.
+
 """)
 
 st.markdown("---")
