@@ -43,10 +43,10 @@ st.markdown("""
 ---
 
 ##  Supported Accents
-- 🇺🇸 US English  
-- 🇬🇧 UK English  
-- 🇮🇳 Indian English  
-- 🇦🇺 Australian English  
+1) 🇺🇸 US English  
+2)🇬🇧 UK English  
+3) 🇮🇳 Indian English  
+4)🇦🇺 Australian English  
 """)
 
 st.markdown("---")
