@@ -11,7 +11,7 @@ page_icon="",
 layout="centered"
 )
 
-st.title("🎤 Accent Converter AI")
+st.title("Accent Converter AI")
 
 st.markdown("""
 
@@ -21,20 +21,20 @@ This AI-powered tool converts spoken language into text and then generates speec
 
 You can upload an audio file
 It will convert speech to text
-It converts the audio into desired accent.
+It converts the audio into desired accent
 
 ---
 
 ## Our Purpose
 
-It bridges the communication gap between people hailing from different regions.
-Helps users learn a new language fastly and efficiently.
-Helps tourists in different countries understand smoothly what the locals are saying.
+It bridges the communication gap between people from different regions
+Helps users learn a new language efficiently
+Helps tourists understand locals more easily
 """)
 
 st.markdown("---")
 
-st.subheader(" Features")
+st.subheader("Features")
 
 st.markdown("""
 
@@ -54,44 +54,38 @@ st.markdown("""
 
 st.markdown("---")
 
-# -----------------------------
+st.subheader("Try the Tool")
 
-# 🎛 MAIN TOOL SECTION
-
-# -----------------------------
-
-st.subheader(" Try the Tool")
-
-accent = st.selectbox("Choose Accent", ["US 🇺🇸", "UK 🇬🇧", "India 🇮🇳", "Australia 🇦🇺"])
+accent = st.selectbox("Choose Accent", ["US", "UK", "India", "Australia"])
 
 accents = {
-"US 🇺🇸": "com",
-"UK 🇬🇧": "co.uk",
-"India 🇮🇳": "co.in",
-"Australia 🇦🇺": "com.au"
+"US": "com",
+"UK": "co.uk",
+"India": "co.in",
+"Australia": "com.au"
 }
 
-audio_file = st.file_uploader(" Upload your WAV audio file", type=["wav"])
+audio_file = st.file_uploader("Upload your WAV audio file", type=["wav"])
 
 if audio_file is not None:
 
 ```
-st.success(" File uploaded successfully")
+st.success("File uploaded successfully")
 st.audio(audio_file)
 
 r = sr.Recognizer()
 
-with st.spinner(" Processing audio..."):
+with st.spinner("Processing audio..."):
     try:
         with sr.AudioFile(audio_file) as source:
             audio = r.record(source)
 
         text = r.recognize_google(audio)
 
-        st.markdown("###  Transcribed Text")
-        st.info(text)
+        st.subheader("Transcribed Text")
+        st.write(text)
 
-        st.markdown("###  Accent Output")
+        st.subheader("Accent Output")
 
         tts = gTTS(text=text, lang='en', tld=accents[accent])
 
@@ -99,10 +93,10 @@ with st.spinner(" Processing audio..."):
             tts.save(fp.name)
             st.audio(fp.name)
 
-        st.success(" Done!")
+        st.success("Done")
 
     except sr.UnknownValueError:
-        st.error(" Could not understand audio")
+        st.error("Could not understand audio")
     except sr.RequestError:
-        st.error(" API error / no internet")
+        st.error("API error or no internet")
 ```
