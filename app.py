@@ -18,15 +18,15 @@ st.markdown("""
 This AI-powered tool converts spoken language into text and then generates speech in different English accents.
 
  You can upload an audio file  
- It will convert speech → text  
- Then play it back in selected accent  
+ It will convert speech to text  
+ It converts the audio into desired accent.  
 
 ---
 
-##  Why this tool?
-- Helps understand different English accents
-- Useful for language learning
-- Demonstrates Speech Recognition + AI voice synthesis
+##  Our Purpose
+ It bridges the communication gap between people hailing from different regions.
+ Helps users learn a new language fastly and efficiently.
+ Helps tourists in different countries understand smoothly what the locals are saying.
 """)
 
 st.markdown("---")
@@ -35,18 +35,18 @@ st.markdown("---")
 st.subheader(" Features")
 
 st.markdown("""
- Speech-to-Text conversion using AI  
- Accent-based voice generation  
- Supports multiple English accents  
- Simple and interactive UI  
+Simple and interactive UI
+Uses powerful and reliable API for smooth functioning for the application
+Supports multiple accents from around the world.
+
 
 ---
 
 ##  Supported Accents
-- 🇺🇸 US English  
-- 🇬🇧 UK English  
-- 🇮🇳 Indian English  
-- 🇦🇺 Australian English  
+-  US English  
+-  UK English  
+-  Indian English  
+-  Australian English  
 """)
 
 st.markdown("---")
