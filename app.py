@@ -24,14 +24,14 @@ This AI-powered tool converts spoken language into text and then generates speec
 ---
 
 ## 💡 Why this tool?
-- Helps understand different English accents
-- Useful for language learning
-- Demonstrates Speech Recognition + AI voice synthesis
+Helps understand different English accents
+Useful for language learning
+Demonstrates Speech Recognition + AI voice synthesis
 """)
 
 st.markdown("---")
 
-st.subheader(" Features")
+st.subheader(" ✨Features")
 
 st.markdown("""
  Speech-to-Text conversion using AI  
@@ -42,10 +42,10 @@ Simple and interactive UI
 ---
 
 ## 🌍 Supported Accents
-- 🇺🇸 US English  
-- 🇬🇧 UK English  
-- 🇮🇳 Indian English  
-- 🇦🇺 Australian English  
+ US English  
+ UK English  
+ Indian English  
+ Australian English  
 """)
 
 st.markdown("---")
@@ -58,10 +58,10 @@ st.subheader("🎤 Try the Tool")
 accent = st.selectbox("Choose Accent", ["US 🇺🇸", "UK 🇬🇧", "India 🇮🇳", "Australia 🇦🇺"])
 
 accents = {
-    "US 🇺🇸": "com",
-    "UK 🇬🇧": "co.uk",
-    "India 🇮🇳": "co.in",
-    "Australia 🇦🇺": "com.au"
+    "US ": "com",
+    "UK ": "co.uk",
+    "India ": "co.in",
+    "Australia ": "com.au"
 }
 
 audio_file = st.file_uploader(" Upload your WAV audio file", type=["wav"])
