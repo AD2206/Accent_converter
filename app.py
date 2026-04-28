@@ -17,9 +17,9 @@ st.markdown("""
 ##  Our Purpose
 This AI-powered tool converts spoken language into text and then generates speech in different English accents.
 
- You can upload an audio file  
- It will convert speech → text  
- Then play it back in selected accent  
+ Upload an audio file
+ It converts speech to text 
+ Play the audio in your desired accent
 
 ---
 
@@ -27,6 +27,7 @@ This AI-powered tool converts spoken language into text and then generates speec
  Helps understand different English accents
  Useful for language learning
  Demonstrates Speech Recognition + AI voice synthesis
+ Helps tourists visiting foreign countries
 """)
 
 st.markdown("---")
